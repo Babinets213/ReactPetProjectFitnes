@@ -1,19 +1,24 @@
+/* Загальний стиль хедера */
 .header {
   background-color: #6a4c93;
-  margin-top: 0;
-  padding: 10px 15px;
+  padding: 10px 20px;
   color: white;
   display: flex;
   border-radius: 30px;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-h1{
+/* Заголовок */
+h1 {
   font-weight: 900;
   text-transform: uppercase;
+  margin: 0;
+  font-size: 24px;
 }
+
+/* Контейнер вмісту */
 .header-content {
   display: flex;
   align-items: center;
@@ -21,48 +26,45 @@ h1{
   justify-content: space-between;
 }
 
-.header-content h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
+/* Блок праворуч (пошук + профіль) */
 .header-right {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
-.header-right input {
-  padding: 10px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-}
-.search-container input{
-  border-radius: 20px;
-}
+/* Контейнер пошуку */
 .search-container {
   position: relative;
+  width: 300px; /* ширина пошуку */
 }
 
+.search-container input {
+  width: 100%;
+  padding: 10px 40px 10px 15px; /* padding праворуч під іконку */
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Іконка пошуку */
 .search-icon {
-  color: rgb(64, 64, 64);
-  margin-right: 15px;
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 12px;
   transform: translateY(-50%);
+  color: rgb(64, 64, 64);
+  cursor: pointer;
 }
 
-.search-container input[type="text"] {
-  padding-right: 30px;
-}
-
+/* Аватар профілю */
 .profile-pic {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   overflow: hidden;
+  border: 2px solid #fff;
 }
 
 .profile-pic img {
@@ -70,4 +72,20 @@ h1{
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 768px) {
+  .search-container {
+    width: 180px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .profile-pic {
+    width: 35px;
+    height: 35px;
+  }
 }
