@@ -33,27 +33,27 @@ The Fitness Tracker Application is a React-based web application designed to hel
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/minnukota381/Fitness-Tracking-App-UI-React.git
-    ```
+   ```bash
+   git clone https://github.com/minnukota381/Fitness-Tracking-App-UI-React.git
+   ```
 
 2. Navigate to the project directory:
 
-    ```bash
-    cd Fitness-Tracking-App-UI-React
-    ```
+   ```bash
+   cd Fitness-Tracking-App-UI-React
+   ```
 
 3. Install the dependencies:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 4. Start the development server:
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
 ## Usage
 
@@ -103,11 +103,3 @@ fitness-tracker/
 │
 └── package.json
 ```
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- Thanks to the open-source community for providing valuable libraries and tools.
